@@ -1,10 +1,14 @@
 LANDSAT Velocities
 =======================
-*by Robert McNabb*
+by Robert McNabb
 
-<span style="background-color: #FFFF00">This is a metadata-only repository. Data are only available from the author.</span>
+*This is a metadata-only repository. Data are only available from the author.*
 
-### Bob McNabb, email: 2017-03-14
+## Citation
+
+> Robert W. McNabb, Regina Hock, and Matthias Huss (2015). Variations in Alaska Tidewater Glacier Frontal Ablation, 1985–2013. Journal of Geophysical Research: Earth Surface 120, 120-136. doi:[10.1002/2014JF003276](https://doi.org/10.1002/2014JF003276)
+
+## Source data
 
 There are three folders corresponding to the landsat sensor used (TM, ETM, OLI), and inside each folder there's a bunch of `*.tar.gz` files with the actual data.
 
@@ -30,7 +34,7 @@ There are three folders corresponding to the landsat sensor used (TM, ETM, OLI),
 
 They haven't been filtered at all, but I did cull any vectors that were more than twice the mean plus twice the standard deviation of the on-glacier velocities. Some of the ETM slc-off scenes might need some work, but fortunately Columbia sits right towards the middle of most of the scenes, so the striping isn't too bad for the terminus region.
 
-## Datums
+### Datums
 
 All GeoTIFFs and Shapefiles are in WGS84 UTM Zone 6N. Date ranges are based on dates only (e.g. 19940101_19940102 = 24 hours). Time can be gleaned from metadata returned by URL queries like:
 
